@@ -64,9 +64,9 @@ function result () {
                 }
             });
             display.textContent = `${sumArray}`;
-            isOperationOk = true;
+            currentNumber = sumArray.toString();
             storedNumber = 0;
-            currentNumber = 0;
+            console.log(storedNumber, currentNumber)
     }
 }
 
@@ -75,10 +75,9 @@ opEqual.addEventListener('click', result);
 nums.forEach((n) => {
     n.addEventListener('click', (e) => {
         let choseNum = e.target.classList[3];
-        if (display.textContent == 0 || isOperationOk == true){
+        if (display.textContent == 0){
             display.textContent = `${choseNum}`
             currentNumber = choseNum;
-            isOperationOk = false;
         } else {
             display.textContent += `${choseNum}`;
             currentNumber += choseNum;
