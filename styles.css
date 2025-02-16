@@ -45,7 +45,8 @@ p{
     font-size: 25px;
     font-weight: 500;
     color: brown;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: default;
 }
 
 #numbers{
@@ -72,6 +73,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite;
     text-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    cursor: default;
 }
 
 .number{
