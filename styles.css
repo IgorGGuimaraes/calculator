@@ -39,6 +39,7 @@ body{
     border-top-right-radius: 12px;
 }
 
+
 p{
     padding: 0 1em 1em 0;
     font-size: 25px;
@@ -88,9 +89,13 @@ h1{
     transition-duration: 0.15s;
 }
 
-.operator{
+.opr{
     width: 100%;
     background-color: peachpuff;
+}
+
+.point{
+    border-bottom-right-radius: 12px;
 }
 
 .btn:hover{
@@ -109,10 +114,6 @@ h1{
 
 .operator:active{
     background-color: peachpuff;
-}
-
-.opDiv{
-    border-bottom-right-radius: 12px;
 }
 
 .opSum{

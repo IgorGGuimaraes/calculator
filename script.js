@@ -26,7 +26,7 @@ function clearDisplay() {
 clear.addEventListener('click', clearDisplay);
 
 function handleOperators() {
-    storedNumber = parseInt(currentNumber);
+    storedNumber = parseFloat(currentNumber);
     currentNumber = 0;
     console.log(storedNumber, currentNumber); 
 }
@@ -44,7 +44,7 @@ operators.forEach((op) => {
 
 function result () {
     if(storedNumber !== 0){
-        const actualNumber = parseInt(currentNumber);
+        const actualNumber = parseFloat(currentNumber);
         console.log(actualNumber);
         megaArray = [storedNumber, actualNumber];
             let sumArray = megaArray.reduce((a, b) => {
@@ -75,10 +75,13 @@ opEqual.addEventListener('click', result);
 nums.forEach((n) => {
     n.addEventListener('click', (e) => {
         let choseNum = e.target.classList[3];
-        if (display.textContent == 0){
+        if (display.textContent == 0 && choseNum !== '.'){
             display.textContent = `${choseNum}`
             currentNumber = choseNum;
-        } else {
+        } else if(currentNumber.toString().indexOf('.') == -1){
+            display.textContent += `${choseNum}`;
+            currentNumber += choseNum;
+        } else if (choseNum !== '.'){
             display.textContent += `${choseNum}`;
             currentNumber += choseNum;
         }
