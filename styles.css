@@ -47,6 +47,8 @@ p{
     color: brown;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: default;
+    transition: ease-in;
+    transition-duration: 0.15s;
 }
 
 #numbers{
@@ -100,14 +102,20 @@ h1{
     border-bottom-right-radius: 12px;
 }
 
+p:hover{
+    font-weight: 700;
+}
+
 .btn:hover{
     background-color: rgb(255, 244, 218);
     cursor: pointer;
+    font-weight: 700;
 }
 
 .operator:hover{
     background-color: blanchedalmond;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .btn:active{
@@ -120,6 +128,14 @@ h1{
 
 .opSum{
     border-bottom-left-radius: 12px;
+}
+
+#emoji{
+    transition-duration: 20s;
+}
+
+#emoji:hover{
+    font-size: 320px;
 }
 
 @media(max-width:1300px){
